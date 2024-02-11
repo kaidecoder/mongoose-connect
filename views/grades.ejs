@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/header.ejs")%>
+  <body>
+    <%- include("../partials/nav.ejs")%>
+    <h2>Grades</h2>
+    <div class="">
+      <% if(data.length > 0){%> <% data.forEach(item => { %>
+      <div class="grades content">
+    
+
+            <p class="phone"><%= item.scores.type %></p>
+            <p class="phone"><%= item.scores.score %></p>
+            <p class="phone"><%= item.class_id %></p>
+            <p class="phone"><%= item.learner_id %></p>
+
+            
+        
+      </div>
+      <% }) %> <% }else{ %>
+      <p>There is no grade to show!!</p>
+      <% } %>
+    </div>
+    <%- include("../partials/footer.ejs")%>
+  </body>
+</html>
