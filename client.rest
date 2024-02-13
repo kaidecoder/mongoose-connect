@@ -1,7 +1,6 @@
-PATCH http://localhost:3000/grades/56d5f7eb604eb380b0d8d8ce HTTP/1.1
+PATCH http://localhost:3000/grades/class/391 HTTP/1.1
 content-type: application/json
 
 {
-    "type": "exam",
-    "score": 88.88888
+    "class_id": "3910"
 }
